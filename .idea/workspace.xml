@@ -58,11 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/url.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
+            <state relative-caret-position="720">
               <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/querystring.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -96,6 +105,7 @@
         <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/os.js" />
         <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/path.js" />
         <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/url.js" />
+        <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/querystring.js" />
       </list>
     </option>
   </component>
@@ -185,12 +195,12 @@
       <workItem from="1549630283938" duration="118000" />
       <workItem from="1549630417459" duration="175000" />
       <workItem from="1549630606708" duration="411000" />
-      <workItem from="1549631032750" duration="12371000" />
+      <workItem from="1549631032750" duration="12926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15071000" />
+    <option name="totallyTimeSpent" value="15626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -315,8 +325,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/url.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="720">
           <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/querystring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
