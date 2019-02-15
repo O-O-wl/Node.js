@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f48a7b08-df08-47d2-aa7c-32279e546bee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Chapter03/노드모듈시스템/console.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter03/기본내장객체/console.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter03/노드모듈시스템/filename_dirname.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter03/기본내장객체/filename_dirname.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter03/노드모듈시스템/func.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter03/기본내장객체/func.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter03/노드모듈시스템/globalA.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter03/기본내장객체/globalA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter03/노드모듈시스템/globalB.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter03/기본내장객체/globalB.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter03/노드모듈시스템/helloNode.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter03/기본내장객체/helloNode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter03/노드모듈시스템/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter03/기본내장객체/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter03/노드모듈시스템/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter03/기본내장객체/timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter03/노드모듈시스템/var.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter03/기본내장객체/var.js" afterDir="false" />
-    </list>
+    <list default="true" id="f48a7b08-df08-47d2-aa7c-32279e546bee" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -41,11 +31,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter03/기본내장객체/filename_dirname.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
               <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/os.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -76,6 +75,7 @@
         <option value="$PROJECT_DIR$/Chapter03/노드모듈시스템/console.js" />
         <option value="$PROJECT_DIR$/Chapter03/노드모듈시스템/timer.js" />
         <option value="$PROJECT_DIR$/Chapter03/노드모듈시스템/filename_dirname.js" />
+        <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/os.js" />
       </list>
     </option>
   </component>
@@ -113,6 +113,12 @@
               <item name="Node_js" type="462c0819:PsiDirectoryNode" />
               <item name="Chapter03" type="462c0819:PsiDirectoryNode" />
               <item name="기본내장객체" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Node_js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Node_js" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter03" type="462c0819:PsiDirectoryNode" />
+              <item name="기본내장모듈" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -165,19 +171,19 @@
       <workItem from="1549630283938" duration="118000" />
       <workItem from="1549630417459" duration="175000" />
       <workItem from="1549630606708" duration="411000" />
-      <workItem from="1549631032750" duration="8783000" />
+      <workItem from="1549631032750" duration="9140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11483000" />
+    <option name="totallyTimeSpent" value="11840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.20737606" />
-      <window_info id="Structure" order="1" sideWeight="0.501462" side_tool="true" visible="true" weight="0.20737606" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49832216" visible="true" weight="0.20737606" />
+      <window_info id="Structure" order="1" sideWeight="0.5016779" side_tool="true" visible="true" weight="0.20737606" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -188,7 +194,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28824142" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3798127" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -264,6 +270,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/os.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
