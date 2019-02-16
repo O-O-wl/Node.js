@@ -58,7 +58,9 @@ console.log("================================================================");
 
 myEvent.emit('종료');  // '종료' 이벤트 발생
 console.log(`'종료'에 달려있는 이벤트 리스너의 갯수 : ${myEvent.listenerCount('종료')}`);
-myEvent.removeListener('종료',rm);
+
+myEvent.off('종료',rm);
+//myEvent.removeListener('종료',rm);    0ff === removeListener
 
 
 console.log("======================== 이벤트 제거 ==============================");
