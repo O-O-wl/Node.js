@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48a7b08-df08-47d2-aa7c-32279e546bee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter03/기본내장모듈/pipe_back.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter03/기본내장모듈/pipe_back.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter03/기본내장모듈/zlib.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter03/기본내장모듈/zlib.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,24 +17,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/async_fs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-460">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/sync_fs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/buffer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
@@ -42,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/pipe.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state relative-caret-position="240">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -55,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/pipe_back.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
+              <caret selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -65,6 +48,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/fs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/zlib.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -152,6 +153,7 @@
         <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/pipe_front.txt" />
         <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/pipe_back.txt" />
         <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/pipe.js" />
+        <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/zlib.js" />
       </list>
     </option>
   </component>
@@ -241,12 +243,12 @@
       <workItem from="1549630283938" duration="118000" />
       <workItem from="1549630417459" duration="175000" />
       <workItem from="1549630606708" duration="411000" />
-      <workItem from="1549631032750" duration="21861000" />
+      <workItem from="1549631032750" duration="22281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24561000" />
+    <option name="totallyTimeSpent" value="24981000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -417,13 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/fs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/cipher.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -480,6 +475,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/pipe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/fs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/pipe_front.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -490,14 +499,14 @@
     <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/pipe_back.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
+          <caret selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/pipe.js">
+    <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/zlib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        <state relative-caret-position="216">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
         </state>
       </provider>
     </entry>
