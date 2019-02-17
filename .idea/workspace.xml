@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48a7b08-df08-47d2-aa7c-32279e546bee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter04/서버2/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter04/서버2/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -66,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter04/서버2/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="53" />
+            <state relative-caret-position="410">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
             </state>
           </provider>
         </entry>
@@ -263,15 +264,16 @@
       <workItem from="1549630417459" duration="175000" />
       <workItem from="1549630606708" duration="411000" />
       <workItem from="1549631032750" duration="29482000" />
-      <workItem from="1550313302933" duration="5448000" />
+      <workItem from="1550313302933" duration="6835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37630000" />
+    <option name="totallyTimeSpent" value="39017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49605057" visible="true" weight="0.20737606" />
       <window_info id="Structure" order="1" sideWeight="0.50394946" side_tool="true" visible="true" weight="0.20737606" />
@@ -542,8 +544,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter04/서버2/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="53" />
+        <state relative-caret-position="410">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>
