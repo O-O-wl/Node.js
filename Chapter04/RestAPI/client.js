@@ -3,6 +3,7 @@ function getUser() { // 로딩 시 사용자 가져오는 함수
     xhr.onload = function () {
         if (xhr.status === 200) {    /**@성공 - 상태코드*/
             var users = JSON.parse(xhr.responseText);
+            console.log(xhr.responseText);
             var list = document.getElementById('list');
             list.innerHTML = '';
             Object.keys(users).map(function (key) {
