@@ -208,7 +208,7 @@ const server = http.createServer((req,res)=>{
                      // 6. id 에 해당하는 값 삭제
                      delete users[id]; // = JSON.parse(body).name
 
-                     res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'});
+                     res.writeHead(200,{'Content-Type':'text/html;charset=utf-8','Allow':'*'});
 
                      res.end(`${JSON.stringify(users)}`)
                  })
