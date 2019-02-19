@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        -const variable = true
+        title= title + '' + title2 /*변수 합치기*/
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        h1= title +" "+ title2
+        style.
+            p{
+                color: red;
+            }
+            .fruits{
+                color: green;
+            }
+
+        include header
+
+        block content
+
+        include footer
+
+        block script
