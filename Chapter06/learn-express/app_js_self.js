@@ -12,7 +12,7 @@ const app = express();
 
 // =============== 미들웨어 =============== //
 
-app.use(logger('dev')); /* morgan 모듈의 메소드 미들웨어를 만나면 기록해주는 메소드 */
+app.use(logger('dev')); /* morgan 모듈의 메소드 미들웨어를 만나면 기록해주는 메소드  -- */
 
 
 app.use(express.static(path.join(__dirname,'public'))); /*  요청한 파일이 없으면 next  위에 있어야 밑에 로직이 실행되는 낭비가 없*/
