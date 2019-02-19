@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f48a7b08-df08-47d2-aa7c-32279e546bee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter06/Memo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter06/Memo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter06/RouterMemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter06/RouterMemo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter06/learn-express/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter06/learn-express/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter06/learn-express/app_js_self.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter06/learn-express/app_js_self.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter06/learn-express/famous_middle_ware.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter06/famous_middle_ware.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,28 +19,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter06/Memo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-244">
-              <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter06/famous_middle_ware.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="315">
+              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/bin/www">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -48,26 +39,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/routes/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            <state relative-caret-position="144">
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/node_modules/morgan/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="182" column="42" selection-start-line="182" selection-start-column="42" selection-end-line="182" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/app_js_self.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1027">
-              <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+            <state relative-caret-position="233">
+              <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/11.8.0/core-modules/internal/modules/cjs/loader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="558" lean-forward="true" selection-start-line="558" selection-end-line="558" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/routes/index2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/routes/users2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -81,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter06/RouterMemo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="445">
+              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -94,16 +103,7 @@
         <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="9" lean-forward="true" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/node_modules/express/lib/express.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1408">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -132,9 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Chapter03/노드모듈시스템/filename_dirname.js" />
-        <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/os.js" />
-        <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/path.js" />
         <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/url.js" />
         <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/querystring.js" />
         <option value="$PROJECT_DIR$/Chapter03/기본내장모듈/crypto.js" />
@@ -177,12 +174,15 @@
         <option value="$PROJECT_DIR$/Chapter05/NPM/Test/index.js" />
         <option value="$PROJECT_DIR$/Chapter05/NPM/npm_memo.js" />
         <option value="$PROJECT_DIR$/Chapter06/learn-express/package.json" />
-        <option value="$PROJECT_DIR$/Chapter06/learn-express/bin/www" />
         <option value="$PROJECT_DIR$/Chapter06/learn-express/famous_middle_ware.js" />
-        <option value="$PROJECT_DIR$/Chapter06/learn-express/app_js_self.js" />
         <option value="$PROJECT_DIR$/Chapter06/Memo.js" />
         <option value="$PROJECT_DIR$/Chapter06/learn-express/views/RouterMemo.js" />
+        <option value="$PROJECT_DIR$/Chapter06/learn-express/app.js" />
+        <option value="$PROJECT_DIR$/Chapter06/learn-express/routes/index2.js" />
+        <option value="$PROJECT_DIR$/Chapter06/learn-express/routes/users2.js" />
         <option value="$PROJECT_DIR$/Chapter06/RouterMemo.js" />
+        <option value="$PROJECT_DIR$/Chapter06/learn-express/bin/www" />
+        <option value="$PROJECT_DIR$/Chapter06/learn-express/app_js_self.js" />
       </list>
     </option>
   </component>
@@ -224,6 +224,13 @@
               <item name="Node_js" type="462c0819:PsiDirectoryNode" />
               <item name="Chapter06" type="462c0819:PsiDirectoryNode" />
               <item name="learn-express" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Node_js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Node_js" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter06" type="462c0819:PsiDirectoryNode" />
+              <item name="learn-express" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Node_js" type="b2602c69:ProjectViewProjectNode" />
@@ -303,19 +310,19 @@
       <workItem from="1549630417459" duration="175000" />
       <workItem from="1549630606708" duration="411000" />
       <workItem from="1549631032750" duration="29482000" />
-      <workItem from="1550313302933" duration="39483000" />
+      <workItem from="1550313302933" duration="42058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71665000" />
+    <option name="totallyTimeSpent" value="74240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4955357" visible="true" weight="0.20737606" />
-      <window_info id="Structure" order="1" sideWeight="0.50446427" side_tool="true" visible="true" weight="0.20737606" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49515906" visible="true" weight="0.20737606" />
+      <window_info id="Structure" order="1" sideWeight="0.50484097" side_tool="true" visible="true" weight="0.20737606" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298647" />
@@ -326,7 +333,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3007284" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.24765868" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -366,27 +373,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/cipher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/sync_fs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/ReadMeByBuffer.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -640,13 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/node_modules/express/lib/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -675,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/app_js_self.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1027">
-          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter06/Memo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-244">
@@ -699,28 +671,63 @@
     <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="9" lean-forward="true" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        <state relative-caret-position="144">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/11.8.0/core-modules/internal/modules/cjs/loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="558" lean-forward="true" selection-start-line="558" selection-end-line="558" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter06/RouterMemo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="445">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/routes/index2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/routes/users2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/app_js_self.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
         </state>
       </provider>
     </entry>

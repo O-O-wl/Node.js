@@ -19,6 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// 라우터 부분  - 커스텀라우터 모듈
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
