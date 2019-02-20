@@ -6,6 +6,7 @@ var { User } = require('../models/index_self');
 
 /*=========== GET =============*/
 router.get('/:id', function(req, res, next) {
+    console.log("요청 id",req.params.id);
     Comment.findAll({
         include:{  //JOIN
             model:User, // TARGET TABLE
@@ -13,7 +14,7 @@ router.get('/:id', function(req, res, next) {
         }
     })
         .then((result)=>{
-        console.log(result);
+       // console.log(result);
         res.status(200).json(result)
     }).catch((err)=>{
             console.error(err);
@@ -28,7 +29,7 @@ router.post('/', (req, res, next) =>{
         commenter:req.body.id,
         comment:req.body.comment
     }).then((result)=>{
-        console.log(result);
+        //console.log(result);
         res.status(201).json(result)
     }).catch((err)=>{
         console.error(err);
@@ -40,7 +41,7 @@ router.post('/', (req, res, next) =>{
 
 /*=========== PATCH =============*/
 router.patch('/:id', function(req, res, next) {
-    comment.update({
+    Comment.update({
         comment:req.body.comment
     },{ where: {id:req.params.id}
     }).then((result)=>{
@@ -55,7 +56,7 @@ router.patch('/:id', function(req, res, next) {
 
 /*=========== DELETE =============*/
 router.delete('/:id', function(req, res, next) {
-    comment.destoy(
+    Comment.destroy(
         {
             where : {
                 id : req.params.id
