@@ -1,7 +1,8 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-/*====================== GET ========================*/
+
+/*====================== POST ========================*/
 router.get('/', function(req, res, next) {
 
 });
@@ -11,4 +12,5 @@ router.post('/', function(req, res, next) {
 
 });
 
-module.exports = router;
+
+module.exports =  router;
