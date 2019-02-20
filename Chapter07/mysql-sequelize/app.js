@@ -5,29 +5,40 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 
+var usersRouter = require('./routes/users');
+var commentsRouter = require('./routes/comments');
 
 var { sequelize } = require('./models/index_self');
 // 모듈이 DB 반환
 
 var app = express();
 
-// view engine setup
+  // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+  // 싱크
 sequelize.sync();
-// 싱크
 
+  // 로그기록
 app.use(logger('dev'));
+
+
+
+  // REQ 본문 해석 -> req.body 에 넣어줌
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+
+
+
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/comments',commentsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

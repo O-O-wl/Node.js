@@ -121,3 +121,83 @@
     module.exports = db;
 
      ```        
+
+---
+
+| DB 메소드 | 기능 |
+| :---: | :---: |
+|  **`create`** |**`생성 하기`**  |
+|  **`findAll`** |**` 전체목록 조회`**  |
+|  **`find`** |**` 하나만 조회`**  |
+|  **`destroy`** |**` 삭제 메소드`**  |
+|  **`update`** |**` 수정 메소드`**  |
+**`비동기 처리 메소드이고 , promise를 지원한다.`**
+
+---
+**`ORM 에서 CRUD 구현부`**
+```js
+/*================== GET =====================*/
+router.get('/:id', function(req, res, next) {
+   Comment.findAll({
+        include:{  //JOIN
+            model:User, // TARGET TABLE
+            where:{id:req.params.id}, // ON
+        }
+    })
+        .then((result)=>{
+        console.log(result);
+        res.status(200).json(result)
+    }).catch((err)=>{
+            console.error(err);
+            next(err);
+        }
+    )
+/*===================== POST ======================*/
+router.post('/', (req, res, next) =>{
+    Comment.create({
+        commenter:req.body.id, 
+        comment:req.body.comment
+    }).then((result)=>{
+        console.log(result);
+        res.status(201).json(result)
+    }).catch((err)=>{
+        console.error(err);
+        next(err);
+        }
+    )
+
+});
+
+/*================== PATCH ======================*/
+router.patch('/:id', function(req, res, next) {
+    comment.update({
+        comment:req.body.comment
+    },{ where: {id:req.params.id}
+    }).then((result)=>{
+        console.log(result);
+        res.json(result)
+    }).catch((err)=>{
+        console.error(err);
+        next(err);
+    })
+})
+;
+/*=================== DELETE =====================*/
+router.delete('/:id', function(req, res, next) {
+    comment.destoy(
+        {
+            where : {
+                id : req.params.id // 삭제 조건
+            }
+        }
+    ).then((result)=>{
+        console.log(result);
+        res.status(200).json(result)
+    }).catch((err)=>{
+            console.error(err);
+            next(err);
+        }
+    )
+});
+
+```
