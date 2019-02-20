@@ -106,9 +106,11 @@
     db.Comment = require('./comment')(sequelize,Sequelize);
 
 
-    db.User.hasMany(db.Comment,{foreignKey : 'commenter',sourceKey:'id'});   // commenter 의 출처 키 'id'
+    db.User.hasMany(db.Comment,{foreignKey : 'commenter',sourceKey:'id'});   
+    // commenter 의 출처 키 'id'
 
-    db.Comment.belongsTo(db.User,{foreignKey : 'commenter',targetKey:'id'}); // commenter 의 타겟 키 'user.id'
+    db.Comment.belongsTo(db.User,{foreignKey : 'commenter',targetKey:'id'}); 
+    // commenter 의 타겟 키 'user.id'
     
     */
     일대일 - (hasOne,belongsTo)
