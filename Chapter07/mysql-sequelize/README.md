@@ -42,12 +42,13 @@
 
 **`프로젝트내에 'models'디렉터리 와 실제 DB내의 테이블이 1:1 관계`**
 
-- `models/user.js`
+- **`models/user.js`**
   
     ``` js
       module.exports = (sequelize,DataTypes)=>{
      return sequelize.define('user', { 
-         //두번쨰 인자 칼럼정의
+        //두번쨰 인자 칼럼정의
+        */내부적으로 id 존재  /
         name: {},
         age: {},
         married: {},
@@ -60,4 +61,61 @@
       });
      };
      ```
-   
+- **`models/comment.js`**
+  
+    ``` js
+      module.exports = (sequelize,DataTypes)=>{
+    return sequelize.define('comment',{
+
+      //commenter 생략 
+       */내부적으로 id 존재  /
+        comment:{
+            type:DataTypes.STRING(100),
+            allowNull:false
+        },
+        create_at:{
+            type:DataTypes.DATE,
+            allowNull:false,
+            defaultValue: sequelize.literal('now()')
+        }
+    },{
+        timestamps:false,
+        underscored:true
+        }
+    );}
+     ```   
+- **`models/index.js`**
+  
+    ``` js
+    const path = require('path');
+    
+    const Sequelize = require('sequelize');
+    
+    const env = process.env.NODE_ENV || 'development';
+    
+    const config = require('../config/config')[env];
+    
+    const sequelize = new Sequelize(config.database,config.username,config.password,config);
+
+    const db ={};
+
+    db.Sequelize = Sequelize;
+    db.sequelize = sequelize;
+
+    db.User = require('./user')(sequelize,Sequelize);
+    db.Comment = require('./comment')(sequelize,Sequelize);
+
+
+    db.User.hasMany(db.Comment,{foreignKey : 'commenter',sourceKey:'id'});   // commenter 의 출처 키 'id'
+
+    db.Comment.belongsTo(db.User,{foreignKey : 'commenter',targetKey:'id'}); // commenter 의 타겟 키 'user.id'
+    
+    */
+    일대일 - (hasOne,belongsTo)
+    일대다 - (hasMany,belongsTo)
+    다대다 - (belongsToMany)
+    /
+
+    module.exports = db;
+
+     ```        

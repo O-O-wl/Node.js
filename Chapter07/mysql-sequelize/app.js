@@ -7,11 +7,18 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+
+var { sequelize } = require('./models/index_self');
+// 모듈이 DB 반환
+
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+
+sequelize.sync();
+// 싱크
 
 app.use(logger('dev'));
 app.use(express.json());
