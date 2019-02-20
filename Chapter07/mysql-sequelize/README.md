@@ -41,3 +41,23 @@
 ```
 
 **`프로젝트내에 'models'디렉터리 와 실제 DB내의 테이블이 1:1 관계`**
+
+- `models/user.js`
+  
+    ``` js
+      module.exports = (sequelize,DataTypes)=>{
+     return sequelize.define('user', { 
+         //두번쨰 인자 칼럼정의
+        name: {},
+        age: {},
+        married: {},
+        comment: {},
+        create_at: {},
+     }
+     ,{ // 3번째 인자 시퀄라이저 설정
+        timestamps:false, // 생성일  기록 - 위에 create_at 이 있기에 false
+        underscored:true // true - 스네이크 , false - 캐멜  
+      });
+     };
+     ```
+   
