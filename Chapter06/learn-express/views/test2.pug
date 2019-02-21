@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        -const variable = true
+        title= title + ' ' + title2
+        link(rel='stylesheets',href='/stylesheets/style.css')
+        style.
+            p{
+                color: purple;
+            }
+            .fruits{
+                color: green;
+            }
+        body
+            include footer
+
+            #main 거꾸로도 되구여
+            include header
+

@@ -1,0 +1,31 @@
+extends  layoutTest.pug
+
+block content
+   body
+        div(id= 'oowl' width= 500)
+        // div#oowl div는 생략도 가능
+
+        span(class='express nodejs')
+            // span.express.nodejs
+        button(type='submit') 안녕
+
+        if variable
+            div 참입니다.
+        else
+            div 거짓입니다.
+
+        div
+
+        for i in fruits
+            div.fruits= i
+        p
+         | 안녕하세요
+         | 여러 줄을 입력하니다.
+         br
+         | 태그를 중간에 넣어도 됩니다.
+         |
+block script
+        script.
+            // script. 을 찍으면 밑에 코드는 스크립트
+            var message = 'pug'
+            alert(message)
