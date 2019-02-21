@@ -1,3 +1,28 @@
 #!/usr/bin/env node
-console.log('HELLO CLI',process.argv); //노드의 설치 경로 ,전역 패키지의 경로 , .. 사용자가 추가 입력한 사항
-//노드 설치경로 node  -> 리눅스나 맥에서 유효
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin, //standard input
+    output:process.stdout //standard output
+});
+
+console.clear();
+
+const callback = (answer)=>{
+    if (answer ==='Y'){
+        console.log('감사함미다 ! 😊')
+    }else if(answer ==='N') {
+        console.log(' 죄송함미다.. 😔')
+    }else {
+        console.log('( Y/N )로 입력해주세요 .');
+        rl.question('예제 재미있으신가여? (Y/N)\n',callback);
+        return;
+
+    }
+    rl.close();
+
+};
+
+rl.question('예제 재미있으신가여? (Y/N)\n',callback);
+
+//init();

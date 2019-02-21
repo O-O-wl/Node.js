@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48a7b08-df08-47d2-aa7c-32279e546bee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Chapter08/Node-CLI/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter08/Node-CLI/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter08/Node-CLI/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter08/Node-CLI/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -92,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter08/Node-CLI/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="30" />
+            <state relative-caret-position="491">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -305,15 +304,16 @@
       <workItem from="1549630606708" duration="411000" />
       <workItem from="1549631032750" duration="29482000" />
       <workItem from="1550313302933" duration="70121000" />
-      <workItem from="1550701530365" duration="13667000" />
+      <workItem from="1550701530365" duration="14794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115970000" />
+    <option name="totallyTimeSpent" value="117097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.493994" visible="true" weight="0.20737606" />
       <window_info id="Structure" order="1" sideWeight="0.506006" side_tool="true" weight="0.20737606" />
@@ -721,8 +721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter08/Node-CLI/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="30" />
+        <state relative-caret-position="491">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
         </state>
       </provider>
     </entry>
