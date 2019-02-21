@@ -1,6 +1,6 @@
 # Node.js
 
-  <img src="https://www.sohamkamani.com/static/express-routing-logo-65137ed3c844d05124dcfdab28263c21-ec9c1.png" width="96" height="96">
+  <img src="https://www.sohamkamani.com/static/express-routing-logo-65137ed3c844d05124dcfdab28263c21-ec9c1.png" width="196" height="96">
  
 
 
