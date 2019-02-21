@@ -12,7 +12,7 @@ module.exports = () => {
 
     /*=========================== 디비 연결 메소드 ===========================*/
   const connent = () => {
-      mongoose.connect('mongodb://root@localhost:27017/admin', {
+      mongoose.connect(`mongodb://root:15935713@localhost:27017/admin`, {
           dbName: 'nodejs', // DB name
       }, (err) => {
           if (err) {

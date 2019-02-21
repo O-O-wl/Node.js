@@ -18,20 +18,20 @@ const userSchema = new Schema({
         unique : true,
     },
     age:{
-        type: Number,
+    type: Number,
         required: true,
-    },
-    married:{
-        type: Boolean,
+},
+married:{
+    type: Boolean,
         required: true,
-    },
+},
 
-    comment: String, // 설정값이 Type 1개 뿐이라서
+comment: String, // 설정값이 Type 1개 뿐이라서
 
     createAt:{
-        type:Date,
-        default: Date.now(), //기본값
-    }
+    type:Date,
+default: Date.now(), //기본값
+}
 
 });
 

@@ -12,7 +12,8 @@ const { Schema } = mongoose;
 const { Types:ObjectId } = Schema;
 
 const commentSchema = Schema({
-        // User 스키마의 Id 참조 
+
+        // User 스키마의 Id 참조하는 자바스크립트 객체
     commenter : {
         type: ObjectId,
         required: true,
