@@ -10,3 +10,26 @@
 - **`Sequelzie`**
 - **`MySQL`**
 - **`Express`**
+
+----
+
+- ###### 커맨드라인에서 사용할수있게 글로벌로 인스톨
+
+```
+$ npm i -g sequelize-cli nodemon
+```
+-   **`nodemon`** - `소스 수정시 자동반영`
+---
+
+- ###### ORM,MySQL 패키지 인스톨
+```
+$ npm i  mysql2  sequelize
+```
+
+
+---
+
+
+- ###### config/config.json 설정 
+- ###### 
+
