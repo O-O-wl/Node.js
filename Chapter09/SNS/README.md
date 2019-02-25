@@ -31,5 +31,8 @@ $ npm i  mysql2  sequelize
 
 
 - ###### config/config.json 설정 
-- ###### 
-
+---
+- ###### `.env` 파일을 `process.env` 에 넣어주는 모듈 -> 보안
+```
+$ npm i dotenv
+```

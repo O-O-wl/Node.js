@@ -1,3 +1,4 @@
 # : 커넥션 정보
 /Chapter08/MongoDB/schemas/index.js
 /Chapter07/mysql-sequelize/config/config.json
+/Chapter09/SNS/.env

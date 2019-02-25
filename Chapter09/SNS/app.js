@@ -6,6 +6,12 @@ const cookieParse = require('cookie-parser');
 const path = require('path');
 const flash = require('connect-flash');
 
+const userRouter = require('./routes/user');
+const pagesRouter = require('./routes/page');
+
+
+require('dotenv').config();  // .env 의 값들이 process.env 에 들어감
+
 
 
 const app = express();
@@ -19,13 +25,13 @@ app.set('port',process.env.PORT || 9999);
 app.use(logger('dev'));
 
 app.use(express.json());
-app.use(express.urlencoded);
+app.use(express.urlencoded({extends:false}));
 app.use(express.static(path.join(__dirname,'public')));
-app.use(cookieParse('nodeSNSSecret'));
+app.use(cookieParse(process.env.COOKIE_SECRET));
 app.use(session({
     resave:false,
     saveUninitialized:false,
-    secret:'nodeSNSSecret',
+    secret:process.env.COOKIE_SECRET,
     cookie:{
         httpOnly:true,
         secure:false,
@@ -33,6 +39,7 @@ app.use(session({
 }));
 
 app.use(flash());
+app.use('/',pagesRouter);
 
 
 app.listen(app.get('port'),()=>{
