@@ -10,11 +10,18 @@ const userRouter = require('./routes/user');
 const pagesRouter = require('./routes/page');
 
 
+const { sequelize } = require('./models');
+
+
 require('dotenv').config();  // .env 의 값들이 process.env 에 들어감
 
 
 
 const app = express();
+
+sequelize.sync();
+
+
 
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','pug');
