@@ -9,8 +9,12 @@ const flash = require('connect-flash');
 const userRouter = require('./routes/user');
 const pagesRouter = require('./routes/page');
 
+const passport = require('passport'); // 패스포드객체 연결
+const passportConfig = require('./passport'); // 패스포트 설정
+
 
 const { sequelize } = require('./models');
+
 
 
 require('dotenv').config();  // .env 의 값들이 process.env 에 들어감
@@ -46,6 +50,15 @@ app.use(session({
 }));
 
 app.use(flash());
+
+app.use(passport.initialize());
+//설정 초기화
+
+app.use(passport.session());
+// 로그인시 사용자정보를 세션으로 가져오는 것 ==> JWT 를 써도됨
+// express-session 객체가 위에 먼저 정의되어있어야한다.
+
+
 app.use('/',pagesRouter);
 
 
