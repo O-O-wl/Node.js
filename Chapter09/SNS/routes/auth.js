@@ -13,16 +13,18 @@ router.post('/join',async (req,res,next)=>{
     // console.log(`회원가입요청 ${email},${nick},${password}`);
    // res.send(`회원가입요청 \n email:${email}\n nick:${nick}\npassword:${password}`)
 
+    router.use(flash());
 
     try{
         /*===============================================
                  회원가입 이전 전처리로직 - 기존회원확인
         ================================================ */
-        const exUser = User.findOne({where:{email}});
+        const exUser = User.find({where:{email}});
 
         if(exUser){
-            req.flash('회원가입실패',' 이미 가입된 이메일 입니다.');
-            return res.redirect('/join');
+            console.log('회원가입실패');
+            req.flash('joinError',' 이미 가입된 이메일 입니다.');
+          return res.redirect('/join');
         }
 
         /**============================================
