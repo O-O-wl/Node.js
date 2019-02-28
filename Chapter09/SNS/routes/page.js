@@ -26,7 +26,7 @@ router.get('/',(req,res,next)=>{
         title:"Node SNS",
         twits:[],
         user:null,
-        loginError:reg.flash('loginError')
+        loginError:req.flash('loginError')
     })
 });
 
