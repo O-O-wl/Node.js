@@ -10,7 +10,7 @@ const { User } = require('../models');
  =========================================*/
 
 
-
+const userCash = {}; // 캐싱을 저장할 객체
 
 module.exports = (passport) =>{
 
@@ -64,10 +64,16 @@ module.exports = (passport) =>{
             user = {id:1 , name:'부엉이' , age:27 }
 
          ============================================*/
+        if(userCash[id]){
+            // 캐시에 존재시 꺼내오기
+            done(null,userCash[id]);
+        }
+        else{
         User.find({where:{id}})
-         .then(user => done(null,user)
+         .then(user => userCash[id] = user,done(null,user)  //캐싱
+
              // find의 결과물로 user 반환  => 콜백메소드 / req.user 에 다시 저장
-        ).catch(e =>done(e));
+        ).catch(e =>done(e));}
     });
 
 
