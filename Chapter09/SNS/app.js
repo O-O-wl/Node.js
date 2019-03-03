@@ -26,6 +26,7 @@ const app = express();
 
 sequelize.sync();
 
+//passportConfig(passport);
 
 
 app.set('views',path.join(__dirname,'views'));

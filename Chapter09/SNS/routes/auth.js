@@ -8,7 +8,7 @@ const passport = require('passport');
 const { User } = require('../models');
 const flash = require('connect-flash');
 
-const {isLoggedIn,isNotLoggedIn} = require('middlewares');
+const {isLoggedIn,isNotLoggedIn} = require('./middlewares');
 
 
 const router = express.Router();
@@ -34,9 +34,12 @@ router.post('/join',isNotLoggedIn,async (req,res,next)=>{
         /*===============================================
                  회원가입 이전 전처리로직 - 기존회원확인
         ================================================ */
-        const exUser = User.find({where:{email}});
+        console.log(email);
+        const exUser = await User.find({where:{email}});
+
 
         if(exUser){
+            console.log(exUser);
             console.log('회원가입실패');
             req.flash('joinError',' 이미 가입된 이메일 입니다.');
           return res.redirect('/join');
@@ -46,7 +49,7 @@ router.post('/join',isNotLoggedIn,async (req,res,next)=>{
                         패스워드 암호화
         ==============================================*/
         console.time('암호화');
-       const hash =  await bcrypt.hash(password,20);// 암호화 정도
+       const hash =  await bcrypt.hash(password,13);// 암호화 정도
         console.timeEnd('암호화');
 
 
@@ -75,6 +78,7 @@ router.post('/join',isNotLoggedIn,async (req,res,next)=>{
  ======================================================*/
 // 로그인 중이 아닌지 확인하는 미들웨어 실행후 로그인로직을 수행하는 미들웨어 추가로 실행
 router.post('/login',isNotLoggedIn,(req,res,next)=>{
+    console.log('로그인요청');
 
                         // passport 의 local속성   /  done(에러,성공,실패) strategy 반환값 처리
     passport.authenticate('local',(authError,user,Info)=>{
@@ -88,7 +92,7 @@ router.post('/login',isNotLoggedIn,(req,res,next)=>{
         /* =========== 실패 =============*/
         else if(!user){
             req.flash('loginError',Info.message); // 알림후 리다이렉트
-            return req.redirect('/');
+            return res.redirect('/');
         }
 
         /** ======== Done 성공 =========*/
@@ -100,13 +104,13 @@ router.post('/login',isNotLoggedIn,(req,res,next)=>{
                 console.error(loginError);
                 return next(loginError);
             }
-            return req.redirect('/');
+            return res.redirect('/');
         })
 
 
 
 
-    })
+    })(req,res,next)// 미들웨어 내의 미들웨어에는 (req, res, next)를 붙입니다.
 
 });
 

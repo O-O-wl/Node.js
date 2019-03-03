@@ -6,7 +6,10 @@ const { isLoggedIn,isNotLoggedIn } = require('./middlewares');
 
 /*================================    프로필 페이지    ======================================*/
 router.get('/profile',isLoggedIn,(req,res,next)=>{
-    res.render('profile',{title:'내정보 - Node SNS',user:null});
+    res.render('profile',{
+        title:'내정보 - Node SNS',
+        user:req.user
+    });
 
 
 });
@@ -16,7 +19,11 @@ router.get('/profile',isLoggedIn,(req,res,next)=>{
 
 /*================================  회원가입 페이지  ======================================*/
 router.get('/join',isNotLoggedIn,(req,res,next)=>{
-res.render('join',{title:'회원가입 - Node SNS ',user : null,joinError:req.flash('join Error')})
+    res.render('join',{
+        title:'회원가입 - Node SNS ',
+        user : req.user,
+        joinError:req.flash('join Error')
+    })
 });
 
 
@@ -28,7 +35,7 @@ router.get('/',(req,res,next)=>{
     res.render('main',{
         title:"Node SNS",
         twits:[],
-        user:null,
+        user:req.user,
         loginError:req.flash('loginError')
     })
 });

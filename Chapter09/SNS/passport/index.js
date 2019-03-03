@@ -9,5 +9,5 @@ const kakao  = require('./kakaoStrategy');
 module.exports = (passport) =>{
 
     local(passport);  // 로컬패스포트 활성화
-    kakao(passport);  // 카카오 패스포트 활성화
+   kakao(passport);  // 카카오 패스포트 활성화
 };
