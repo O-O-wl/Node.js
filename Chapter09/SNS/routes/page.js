@@ -20,6 +20,9 @@ res.render('join',{title:'회원가입 - Node SNS ',user : null,joinError:req.fl
 });
 
 
+
+
+
 router.get('/',(req,res,next)=>{
 
     res.render('main',{
