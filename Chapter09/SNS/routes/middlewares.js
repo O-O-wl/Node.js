@@ -4,7 +4,7 @@
             로그인 여부 확인
         로그인 중일시  다음미들웨어로
  ====================================*/
-exports.isLogedIn = (req,res,next)=>{
+exports.isLoggedIn = (req,res,next)=>{
 
     // 로그인 여부
     if(req.isAuthenticated()) {
@@ -23,7 +23,7 @@ exports.isLogedIn = (req,res,next)=>{
            비로그인 여부 확인후
          다음 미들웨어로  넘긴다.
  ====================================*/
-exports.isNotLogedIn = (req,res,next)=>{
+exports.isNotLoggedIn = (req,res,next)=>{
     if(!req.isAuthenticated()){
         next();
 

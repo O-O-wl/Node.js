@@ -124,7 +124,7 @@ module.exports = (passport) =>{
 
 // 패스포트
 ```
-<<<<<<< HEAD
+
 ----
 - ###### 11. `join` 로직 작성
  ```
@@ -238,10 +238,40 @@ module.exports = (passport) =>{
  ---
  - ###### 14. `auth` 파일 수정
  ```
+  /routes/auth.js
+ ```
+- ```js
+     const {isLogedIn,isNotLogedIn } = required('middleware');
+
+    */로그인 여부 확인후 비로그인시 만 다음 미들웨어로 넘기게 미들웨어 설정/
+     router.post('/join',isNotLogedIn ,async (req,res,next)=>{
+     router.post('/login',isNotLogedIn,async (req,res,next)=>{
+
+  ```
+ ---
+ - ###### 15. `logout` 로직 미들웨어 작성
+ ```
+  /routes/auth.js
+ ```
+ - ```javascript
+    router.get('/logout',IsLoggedIn,(req,res,next)=>{
+        req.logout();  // 패스포트가 자동으로 추가해주는 메소드
+        */ req.user를 비워준다/
+        res.redirect('/') 
+    })
+    ```
+ ---
+  - ###### 15. `passport` 설정파일 작성
+ ```
   /passport/localStrategy,kakaoStrategy,index.js
  ```
  ---
- - ###### 1. `passport` 설정파일 작성
+  - ###### 15. `passport` 설정파일 작성
+ ```
+  /passport/localStrategy,kakaoStrategy,index.js
+ ```
+ ---
+  - ###### 15. `passport` 설정파일 작성
  ```
   /passport/localStrategy,kakaoStrategy,index.js
  ```

@@ -8,14 +8,21 @@ const passport = require('passport');
 const { User } = require('../models');
 const flash = require('connect-flash');
 
-const {isLogedIn,isNotLogedIn} = require('middlewares');
+const {isLoggedIn,isNotLoggedIn} = require('middlewares');
 
 
 const router = express.Router();
 
 
+
+/**=====================================================
+ *
+                  @회원가입로직 미들웨어
+                  @POST  /auth/join
+ *
+ ======================================================*/
 // 로그인중이 아닌지 확인하는 미들웨어 실행 후 회원가입 미들웨어 추가로 실행
-router.post('/join',isNotLogedIn,async (req,res,next)=>{
+router.post('/join',isNotLoggedIn,async (req,res,next)=>{
 
     const { email,nick,password } = req.body;
     // console.log(`회원가입요청 ${email},${nick},${password}`);
@@ -60,11 +67,14 @@ router.post('/join',isNotLogedIn,async (req,res,next)=>{
 
 
 
-
-
-
+/**=====================================================
+ *
+                      @로그인 로직 미들웨어
+                     @POST /auth/login
+ *
+ ======================================================*/
 // 로그인 중이 아닌지 확인하는 미들웨어 실행후 로그인로직을 수행하는 미들웨어 추가로 실행
-router.post('/login',isNotLogedIn,(req,res,next)=>{
+router.post('/login',isNotLoggedIn,(req,res,next)=>{
 
                         // passport 의 local속성   /  done(에러,성공,실패) strategy 반환값 처리
     passport.authenticate('local',(authError,user,Info)=>{
@@ -101,6 +111,23 @@ router.post('/login',isNotLogedIn,(req,res,next)=>{
 });
 
 
+/**=====================================================
+ *
+                 @로그아웃 로직 미들웨어
+                @GET  /auth/logout
+ *
+ ======================================================*/
+router.get('/logout',isLoggedIn,(req,res,next)=>{
+
+    req.logout(); // 패스포트를 통해 자동으로 추가된 메소드
+    /*
+    호출하면 등록 정보 logout()가 제거되고 req.user로그인 세션이 지워집니다 (있는 경우).*/
+
+    req.session.destroy(); //  req.user 삭제를 위한 세션객체 속성 삭
+    res.redirect('/'); //로그아웃후 메인페이지로 반환
+
+
+});
 
 
 module.exports = router;
