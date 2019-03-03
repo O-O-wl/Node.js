@@ -8,11 +8,14 @@ const passport = require('passport');
 const { User } = require('../models');
 const flash = require('connect-flash');
 
+const {isLogedIn,isNotLogedIn} = require('middlewares');
+
+
 const router = express.Router();
 
 
-
-router.post('/join',async (req,res,next)=>{
+// 로그인중이 아닌지 확인하는 미들웨어 실행 후 회원가입 미들웨어 추가로 실행
+router.post('/join',isNotLogedIn,async (req,res,next)=>{
 
     const { email,nick,password } = req.body;
     // console.log(`회원가입요청 ${email},${nick},${password}`);
@@ -57,7 +60,11 @@ router.post('/join',async (req,res,next)=>{
 
 
 
-router.post('/login',(req,res,next)=>{
+
+
+
+// 로그인 중이 아닌지 확인하는 미들웨어 실행후 로그인로직을 수행하는 미들웨어 추가로 실행
+router.post('/login',isNotLogedIn,(req,res,next)=>{
 
                         // passport 의 local속성   /  done(에러,성공,실패) strategy 반환값 처리
     passport.authenticate('local',(authError,user,Info)=>{

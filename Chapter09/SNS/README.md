@@ -230,7 +230,13 @@ module.exports = (passport) =>{
         - **`localStrategy 에서 수행하고 반환된 done 객체핸들링`**
        
  ---
- - ###### 13. `passport` 설정파일 작성
+  - ###### 13. `middleware` 파일 작성 
+ ```
+  /routes/middleware.js
+ ```
+- **`   로그인여부 비로그인여부를 확인후 다음 미들웨어로 넘겨주는 작업을 하기위한 모듈`**
+ ---
+ - ###### 14. `auth` 파일 수정
  ```
   /passport/localStrategy,kakaoStrategy,index.js
  ```
@@ -242,5 +248,3 @@ module.exports = (passport) =>{
  ---
 =======
 
-// web3 session
->>>>>>> cadadfb42a70155a9bf424b9497a8d0387f5ce51
