@@ -124,6 +124,7 @@ module.exports = (passport) =>{
 
 // 패스포트
 ```
+<<<<<<< HEAD
 ----
 - ###### 11. `join` 로직 작성
  ```
@@ -239,3 +240,7 @@ module.exports = (passport) =>{
   /passport/localStrategy,kakaoStrategy,index.js
  ```
  ---
+=======
+
+// web3 session
+>>>>>>> cadadfb42a70155a9bf424b9497a8d0387f5ce51
