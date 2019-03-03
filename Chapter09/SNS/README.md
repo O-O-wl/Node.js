@@ -253,7 +253,7 @@ module.exports = (passport) =>{
  ```
   /routes/auth.js
  ```
- - ```javascript
+ -  ```javascript
     router.get('/logout',IsLoggedIn,(req,res,next)=>{
         req.logout();  // 패스포트가 자동으로 추가해주는 메소드
         */ req.user를 비워준다/
@@ -261,10 +261,23 @@ module.exports = (passport) =>{
     })
     ```
  ---
-  - ###### 15. `passport` 설정파일 작성
+  - ###### 16. `page` 에 프론트엔드 방어코드 추가
  ```
-  /passport/localStrategy,kakaoStrategy,index.js
+  /routes/page.js
  ```
+ - ```js
+    const { isLoggedIn , isNotLoggedIn } = required('./middlewares');
+
+     router.get('/profile',isLoggedIn,(req,res,next)=>{
+         // view load
+        
+     })
+     router.get('/join',isNotLoggedIn,(req,res,next)=>{
+         // view load
+         })
+    ```
+    -   **`로그인상태여부와 관련된 페이지에 대해 자격에 대한 방어로직 미들웨어 추가`**
+
  ---
   - ###### 15. `passport` 설정파일 작성
  ```

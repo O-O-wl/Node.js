@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-
+const { isLoggedIn,isNotLoggedIn } = require('./middlewares');
 // 페이지 렌더링 라우터
 
 
-/*================================    프로필     ======================================*/
-router.get('/profile',(req,res,next)=>{
+/*================================    프로필 페이지    ======================================*/
+router.get('/profile',isLoggedIn,(req,res,next)=>{
     res.render('profile',{title:'내정보 - Node SNS',user:null});
 
 
@@ -14,8 +14,8 @@ router.get('/profile',(req,res,next)=>{
 
 
 
-/*================================  회원가입   ======================================*/
-router.get('/join',(req,res,next)=>{
+/*================================  회원가입 페이지  ======================================*/
+router.get('/join',isNotLoggedIn,(req,res,next)=>{
 res.render('join',{title:'회원가입 - Node SNS ',user : null,joinError:req.flash('join Error')})
 });
 
