@@ -26,7 +26,7 @@ const app = express();
 
 sequelize.sync();
 
-//passportConfig(passport);
+passportConfig(passport);
 
 
 app.set('views',path.join(__dirname,'views'));
@@ -58,9 +58,11 @@ app.use(session({
 app.use(flash());
 
 app.use(passport.initialize());
-//설정 초기화
+//  설정 초기화
+// req 객체에 passport의 설정을 적용하는 미들웨어
 
 app.use(passport.session());
+// req.session 객체에 passport 정보를 저장
 // 로그인시 사용자정보를 세션으로 가져오는 것 ==> JWT 를 써도됨
 // express-session 객체가 위에 먼저 정의되어있어야한다.
 

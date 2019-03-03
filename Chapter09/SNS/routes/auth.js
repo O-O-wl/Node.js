@@ -80,7 +80,7 @@ router.post('/join',isNotLoggedIn,async (req,res,next)=>{
 router.post('/login',isNotLoggedIn,(req,res,next)=>{
     console.log('로그인요청');
 
-                        // passport 의 local속성   /  done(에러,성공,실패) strategy 반환값 처리
+                        // passport 의 local속성   /  done(에러,성공,실패) strategy 콜백 반환값 처리
     passport.authenticate('local',(authError,user,Info)=>{
 
         /*========= 에러 핸들링 ==========*/

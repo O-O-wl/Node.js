@@ -7,7 +7,15 @@ module.exports = (passport) =>{
     passport.use(new LocalStrategy({
         usernameField: 'email',         //req.body.email - app.use(urlencoded) 가 해석해서 바꾸어줌 -- 키워드 일치해야함
         passwordField: 'password',      //req.body.password
-    }     // setting End
+    }
+
+
+        /** @usernameField - 선택 사항, 기본값은 'username'입니다.*/
+        /** @passwordField - 선택 사항, 기본값은 'password'입니다.@/
+        // 두 필드는 모두 서버로 보내지는 POST 본문의 속성 이름을 정의합니다.*/
+
+
+
     ,async (email,password,done) => {
         /**====================================
                         @Done
@@ -26,8 +34,10 @@ module.exports = (passport) =>{
             if(exUser){
                 //비밀번호 검사로직
 
+                console.time('암호 비교 시간');
                 // passwordField 와 exUser의 비밀번호 비교
-                const result = await bcrypt.compare(password,exUser,password);
+                const result = await bcrypt.compare(password,exUser.password);
+                console.timeEnd('암호 비교 시간');
                 /**===========================================
                                 @bcrypt
                         - 비밀번호 암호화 알고리즘

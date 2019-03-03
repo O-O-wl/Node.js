@@ -281,9 +281,21 @@ module.exports = (passport) =>{
  ---
   - ###### 15. `passport` 설정파일 작성
  ```
-  /passport/localStrategy,kakaoStrategy,index.js
+  /passport/index.js
  ```
+
+ -  ```js
+    module.exports = (passport) => {
+            passport.serializeUser(user,done)=>{
+                */ 세션에 저장하기 좋게 경량화 
+            }
+            passport.deserializeUser(id,done)=>{
+                */ 세션의 저장된 정보로 객체화
+            }
+    }
+    ```
  ---
+ 
   - ###### 15. `passport` 설정파일 작성
  ```
   /passport/localStrategy,kakaoStrategy,index.js
