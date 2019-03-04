@@ -287,19 +287,48 @@ module.exports = (passport) =>{
  -  ```js
     module.exports = (passport) => {
             passport.serializeUser(user,done)=>{
-                */ 세션에 저장하기 좋게 경량화 
+                */ 세션에 저장하기 좋게 경량화 /
+                   // 로그인시 한번 실행
+
             }
             passport.deserializeUser(id,done)=>{
-                */ 세션의 저장된 정보로 객체화
+                */세션의 저장된 정보로 객체화/
+
+                 //매 요청시 마다 passport.session() 에서 실행
+                 
             }
     }
     ```
  ---
  
-  - ###### 15. `passport` 설정파일 작성
+  - ###### 16. `kakaoStrategy` 파일 작성
  ```
-  /passport/localStrategy,kakaoStrategy,index.js
+  /passport/kakaoStrategy.js
  ```
- ---
-=======
+ -  ```js
+        const KakaoStrategy = require('passport-kakao').Strategy;
+
+        module.exports = (passport) => { new KakaoStrategy({
+            clientID:process.env.KAKAKO_ID, // 카카오앱 아이디 - 개발자 사이트에 등록된 REST-API key
+            callbackURL: 'auth/kakao/callback' //인증 완료후 콜백할 URL},
+            async(accessToken,refreshToken,profile,done)=>{
+                // 카카오 인증 완료후 실행될 로직부 
+                //로그인 성공처리 || 처음이면 DB 에 저장후 성공처리
+                
+        })
+
+        }
+    ```
+    ```
+                             @흐름 
+                             
+                     1. /auth/kakao
+                     2. 카카오로그인 성공후
+                     3. /auth/kakao/callback 으로 프로필 
+    ```
+    ---
+
+
+
+
 

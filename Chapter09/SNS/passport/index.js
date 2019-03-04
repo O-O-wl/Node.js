@@ -56,6 +56,7 @@ module.exports = (passport) =>{
         console.log('==========================');
         console.log('  deserializeUser called');
         console.log('==========================');
+        console.log('id',id);
         /*=========================================
                           id = 1
 
@@ -64,19 +65,16 @@ module.exports = (passport) =>{
             user = {id:1 , name:'부엉이' , age:27 }
 
          ============================================*/
-        if(userCash[id]){
-            // 캐시에 존재시 꺼내오기
-            done(null,userCash[id]);
-        }
-        else{
+
+
         User.find({where:{id}})
-         .then(user => userCash[id] = user,done(null,user)  //캐싱
+         .then(user => done(null,user)  //캐싱
 
              // find의 결과물로 user 반환  => 콜백메소드 / req.user 에 다시 저장
-        ).catch(e =>done(e));}
+        ).catch(e =>done(e));
     });
 
 
     local(passport);  // 로컬패스포트 활성화
-    //kakao(passport);  // 카카오 패스포트 활성화
+    kakao(passport);  // 카카오 패스포트 활성화
 };
