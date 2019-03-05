@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { isLoggedIn,isNotLoggedIn } = require('./middlewares');
+const { User , Post , Hashtag} = require('../models');
 // 페이지 렌더링 라우터
 
 
@@ -30,16 +31,22 @@ router.get('/join',isNotLoggedIn,(req,res,next)=>{
 
 
 
-router.get('/',(req,res,next)=>{
+router.get('/',async(req,res,next)=>{
 
-    res.render('main',{
+    const posts = await Post.findAll({
+        include:{
+            model:User,
+            attribute:['id','nick']
+        }
+    });
+
+    await res.render('main',{
         title:"Node SNS",
-        twits:[],
+        twits:posts,
         user:req.user,
         loginError:req.flash('loginError')
     })
 });
-
 
 
 module.exports = router;

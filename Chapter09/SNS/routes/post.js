@@ -1,7 +1,7 @@
 const express = require('express');
 const multer = require('multer');
 const path = require('path');
-const { Post,Hashtag } = require('../models');
+const { Post,Hashtag,User } = require('../models');
 const router = express.Router();
 
 // 업로드 객체 생성({옵션})
@@ -105,6 +105,30 @@ router.post('/',upload2.none(), async (req,res,next)=>{
     }catch(e){
         console.error(e);
         next(e);
+    }
+});
+
+
+
+router.get('/hashtag', async (req, res, next) => {
+    const query = req.query.hashtag;
+    if (!query) {
+        return res.redirect('/');
+    }
+    try {
+        const hashtag = await Hashtag.find({ where: { title: query } });
+        let posts = [];
+        if (hashtag) {
+            posts = await hashtag.getPosts({ include: [{ model: User }] });
+        }
+        return res.render('main', {
+            title: `${query} | NodeBird`,
+            user: req.user,
+            twits: posts,
+        });
+    } catch (error) {
+        console.error(error);
+        return next(error);
     }
 });
 
