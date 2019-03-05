@@ -17,6 +17,7 @@ db.Hashtag = require('./hashtag')(sequelize,Sequelize);
 
 db.User.hasMany(db.Post);
 db.Post.belongsTo(db.User);
+// 릴레이션 설정에 의해 Post 테이블에 userId 라는 칼럼이 추가된다.
 
 
 db.Post.belongsToMany(db.Hashtag,{through:'PostHashTag'});

@@ -321,14 +321,59 @@ module.exports = (passport) =>{
     ```
     ```
                              @흐름 
-                             
+
                      1. /auth/kakao
                      2. 카카오로그인 성공후
                      3. /auth/kakao/callback 으로 프로필 
     ```
     ---
+ ---
+ 
+  - ###### 17. `multer` 모듈 설치
+ ```
+  $ npm install multer
+```
+ -   **`이미지 업로드를 위한 모듈`**
+ -   **`이미지는 enctype 으로 암호화 되어 저장된다, 이 것은 bodyParser 가 해석할 수 없기에 , multer 모듈로 해석해야한다.`**
+ 
 
-
-
+---
+ - ###### 18. `post` 라우터 생성
+  ```
+  /routes/post
+```
+ -   **`로그인상태여부와 관련된 페이지에 대해 자격에 대한 방어로직 미들웨어 추가`**
+---
+ - ###### 19. `multer` 에 대한 설정 , 미들웨어 셋팅
+ ```
+  /routes/post
+```
+ -  ``` js
+    const multer = require('multer');
+    const upload = multer({
+        // 저장 디스크 설정
+        storage: multer.diskStorage(
+            {
+                destination(req,res,cb){
+                        //서버 디스크애 파일저장 경로
+                },
+                filename(req,res,cb){
+                    // 파일 명
+                }
+            },
+        limit:{
+            filesize://파일크기
+        }
+        )
+    })
+    
+    ```
+---
+- ###### 20. `kakaoStrategy` 파일 작성
+ ```
+  $ npm install multer
+```
+ -   **`로그인상태여부와 관련된 페이지에 대해 자격에 대한 방어로직 미들웨어 추가`**
+---
 
 

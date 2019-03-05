@@ -1,13 +1,13 @@
-const express = required('express');
-const session = required('express-session');
-const path = required('path');
-const cookieParser = required('cookie-parser');
-const morgan = required('morgan');
+const express = require('express');
+const session = require('express-session');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const morgan = require('morgan');
 
-const flash = required('connect-flash');
-const indexRouter = required('./routes');
+const flash = require('connect-flash');
+const indexRouter = require('./routes');
 
-required('dotenv').config();
+require('dotenv').config();
 
 
 const app = express();

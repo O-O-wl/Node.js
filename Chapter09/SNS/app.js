@@ -9,6 +9,7 @@ const flash = require('connect-flash');
 const userRouter = require('./routes/user');
 const pagesRouter = require('./routes/page');
 const authRouter = require('./routes/auth');
+const postRouter = require('./routes/post');
 
 const passport = require('passport'); // 패스포드객체 연결
 const passportConfig = require('./passport'); // 패스포트 설정
@@ -69,6 +70,7 @@ app.use(passport.session());
 
 app.use('/',pagesRouter);
 app.use('/auth',authRouter);
+app.use('/post',postRouter);
 
 
 app.listen(app.get('port'),()=>{
