@@ -3,11 +3,34 @@ extends layout
 block content
     div F12를 눌러 console 탭과 network 탭을 확인하세요.
     script.
-        var webSocket = new WebSocket("ws://localhost:8005");
-        webSocket.onopen = function () {
-            console.log('서버와 웹소켓 연결 성공!');
-        }
-        webSocket.onmessage = function (event) {
-            console.log(event.data);
-            webSocket.send('클라이언트에서 서버로 답장을 보냅니다');
-        }
+       /* ==========================
+              프론트 엔드 웹 소켓 로직
+        ============================*/
+
+
+       var webSocket  = new WebSocket('ws://localhost:9876');
+
+       /*====================================
+                     연결이벤트
+             - backend 'connection' 이벤트
+       ======================================  */
+       webSocket.onopen = function () {
+           console.log('서버와 소켓 연결 성공')
+       }
+
+
+       /*====================================
+                      연결이벤트
+             - backend 'send' 이벤트시
+       =====================================*/
+       webSocket.onmessage = function (event) {
+           console.log(event.data);
+           webSocket.send(`${new Date()} - 클라이언트에서 `)
+       }
+
+
+
+
+
+
+

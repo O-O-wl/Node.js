@@ -7,6 +7,10 @@ const morgan = require('morgan');
 const flash = require('connect-flash');
 const indexRouter = require('./routes');
 
+
+const webSocket = require('./socket');
+
+
 require('dotenv').config();
 
 
@@ -14,7 +18,7 @@ const app = express();
 
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','pug');
-app.set(port,process.env.PORT||9876);
+app.set('port',process.env.PORT||9876);
 
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname,'public')));
@@ -52,3 +56,9 @@ app.use((err,req,res)=>{
     res.render(error);
 
 });
+
+const server = app.listen(app.get('port'),()=>{
+console.log(`${app.get('port')}번 포트에서 대기중`)
+});
+
+webSocket(server);

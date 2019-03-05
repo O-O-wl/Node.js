@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48a7b08-df08-47d2-aa7c-32279e546bee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Chapter09/SNS/routes/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter09/SNS/routes/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter09/SNS/routes/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter09/SNS/routes/post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/GIF_Chat/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/GIF_Chat/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/GIF_Chat/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/GIF_Chat/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/GIF_Chat/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/GIF_Chat/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/GIF_Chat/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/GIF_Chat/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/GIF_Chat/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/GIF_Chat/views/index.pug" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,96 +19,113 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter09/SNS/routes/post.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter09/SNS/routes/page.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter09/SNS/routes/middlewares.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter07/mysql-sequelize/routes/comments.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1257" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter09/SNS/routes/auth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="168" column="14" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter09/SNS/node_modules/express/lib/router/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter09/SNS/node_modules/multer/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter09/SNS/node_modules/express/lib/router/route.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="136" column="12" selection-start-line="136" selection-start-column="12" selection-end-line="136" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter09/SNS/models/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter09/SNS/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Chapter09/SNS/routes/post.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-966">
+                  <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Chapter07/mysql-sequelize/routes/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-299" />
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Chapter09/SNS/routes/auth.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1697">
+                  <caret line="163" column="39" selection-start-line="163" selection-start-column="39" selection-end-line="163" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/routes/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="720">
+                  <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/socket.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-10">
+                  <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/node_modules/express/lib/router/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="174">
+                  <caret line="316" column="12" selection-start-line="316" selection-start-column="12" selection-end-line="316" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/views/error.pug">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/views/index.pug">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="113">
+                  <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="264">
+                  <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/views/index.pug">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="456">
+                  <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -132,8 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Chapter07/mysql-sequelize/public/sequelize.js" />
-        <option value="$PROJECT_DIR$/Chapter07/mysql-sequelize/app.js" />
         <option value="$PROJECT_DIR$/Chapter07/mysql-sequelize/routes/users.js" />
         <option value="$PROJECT_DIR$/Chapter07/mysql-sequelize/routes/index.js" />
         <option value="$PROJECT_DIR$/Chapter07/mysql-sequelize/routes/comments.js" />
@@ -174,15 +193,17 @@
         <option value="$PROJECT_DIR$/Chapter09/SNS/passport/index.js" />
         <option value="$PROJECT_DIR$/Chapter11/GIF_Chat/.env" />
         <option value="$PROJECT_DIR$/Chapter11/GIF_Chat/views/error.pug" />
-        <option value="$PROJECT_DIR$/Chapter11/GIF_Chat/views/index.pug" />
         <option value="$PROJECT_DIR$/Chapter11/GIF_Chat/views/layout.pug" />
-        <option value="$PROJECT_DIR$/Chapter11/GIF_Chat/routes/index.js" />
-        <option value="$PROJECT_DIR$/Chapter11/GIF_Chat/app.js" />
         <option value="$PROJECT_DIR$/Chapter09/SNS/routes/user.js" />
         <option value="$PROJECT_DIR$/Chapter09/SNS/models/index.js" />
         <option value="$PROJECT_DIR$/Chapter09/SNS/app.js" />
         <option value="$PROJECT_DIR$/Chapter09/SNS/routes/page.js" />
         <option value="$PROJECT_DIR$/Chapter09/SNS/routes/post.js" />
+        <option value="$PROJECT_DIR$/Chapter11/GIF_Chat/routes/index.js" />
+        <option value="$PROJECT_DIR$/Chapter11/GIF_Chat/package.json" />
+        <option value="$PROJECT_DIR$/Chapter11/GIF_Chat/app.js" />
+        <option value="$PROJECT_DIR$/Chapter11/GIF_Chat/socket.js" />
+        <option value="$PROJECT_DIR$/Chapter11/GIF_Chat/views/index.pug" />
       </list>
     </option>
   </component>
@@ -218,45 +239,27 @@
             <path>
               <item name="Node_js" type="b2602c69:ProjectViewProjectNode" />
               <item name="Node_js" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter07" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter11" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Node_js" type="b2602c69:ProjectViewProjectNode" />
               <item name="Node_js" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter07" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql-sequelize" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter11" type="462c0819:PsiDirectoryNode" />
+              <item name="GIF_Chat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Node_js" type="b2602c69:ProjectViewProjectNode" />
               <item name="Node_js" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter07" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql-sequelize" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter11" type="462c0819:PsiDirectoryNode" />
+              <item name="GIF_Chat" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Node_js" type="b2602c69:ProjectViewProjectNode" />
               <item name="Node_js" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter09" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Node_js" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Node_js" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter09" type="462c0819:PsiDirectoryNode" />
-              <item name="SNS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Node_js" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Node_js" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter09" type="462c0819:PsiDirectoryNode" />
-              <item name="SNS" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Node_js" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Node_js" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter09" type="462c0819:PsiDirectoryNode" />
-              <item name="SNS" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter11" type="462c0819:PsiDirectoryNode" />
+              <item name="GIF_Chat" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -330,18 +333,18 @@
       <workItem from="1549630606708" duration="411000" />
       <workItem from="1549631032750" duration="29482000" />
       <workItem from="1550313302933" duration="70121000" />
-      <workItem from="1550701530365" duration="80788000" />
+      <workItem from="1550701530365" duration="85626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183091000" />
+    <option name="totallyTimeSpent" value="187929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.493994" visible="true" weight="0.19951633" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.493994" visible="true" weight="0.19951633" />
       <window_info id="Structure" order="1" sideWeight="0.506006" side_tool="true" weight="0.20737606" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -353,7 +356,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" x="-559" y="322" width="1680" height="1050" id="Terminal" order="9" visible="true" weight="0.52237254" />
+      <window_info anchor="bottom" x="-559" y="322" width="1680" height="1050" id="Terminal" order="9" visible="true" weight="0.44745058" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -406,14 +409,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chapter06/RouterMemo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-613" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter06/learn-express/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -431,9 +426,6 @@
           <caret line="7" column="52" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="52" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter07/mysql-sequelize/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter07/mysql-sequelize/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -560,20 +552,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter08/MongoDB/routes/index.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/views/error.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/views/layout.pug">
       <provider selected="true" editor-type-id="text-editor">
@@ -582,31 +562,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/views/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter09/SNS/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter09/SNS/routes/user.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter03/기본내장모듈/pipe.js">
@@ -675,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter09/SNS/routes/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="168" column="14" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter07/mysql-sequelize/routes/comments.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1257" />
@@ -689,15 +638,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter09/SNS/routes/page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
+        <state relative-caret-position="1042">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter09/SNS/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter09/SNS/routes/post.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="-966">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter09/SNS/routes/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1697">
+          <caret line="163" column="39" selection-start-line="163" selection-start-column="39" selection-end-line="163" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/views/error.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="316" column="12" selection-start-line="316" selection-start-column="12" selection-end-line="316" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter07/mysql-sequelize/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter11/GIF_Chat/views/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
         </state>
       </provider>
     </entry>
