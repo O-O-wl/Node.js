@@ -8,7 +8,7 @@ const flash = require('connect-flash');
 const indexRouter = require('./routes');
 
 
-const webSocket = require('./socket');
+const webSocket = require('./socketIO');
 
 
 require('dotenv').config();
@@ -55,7 +55,7 @@ app.use((err,req,res)=>{
     res.status(err.status||500);
     res.render(error);
 
-});
+});//
 
 const server = app.listen(app.get('port'),()=>{
 console.log(`${app.get('port')}번 포트에서 대기중`)
