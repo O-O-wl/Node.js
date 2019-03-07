@@ -5,6 +5,7 @@ block content
     script(src='/socket.io/socket.io.js')
     script.
 
+
         var socket = io.connect('http://localhost:9876',{
             path:'/socket.io'
         });
@@ -12,7 +13,7 @@ block content
         socket.on('fromServer',function(data){
             console.log(data);
             socket.emit('fromClient',`${new Date()} -  클라이언트`)
-            //emit 은 key 로 분리됨
+            //emit은 key 로 분리됨
         })
 
 

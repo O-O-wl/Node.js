@@ -7,6 +7,7 @@ const morgan = require('morgan');
 const flash = require('connect-flash');
 const indexRouter = require('./routes');
 
+//const connect = require('./schemas');
 
 const webSocket = require('./socketIO');
 
@@ -15,6 +16,7 @@ require('dotenv').config();
 
 
 const app = express();
+//connect();
 
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','pug');
@@ -62,3 +64,8 @@ console.log(`${app.get('port')}번 포트에서 대기중`)
 });
 
 webSocket(server);
+
+//+ axios@0.18.0
+// + multer@1.4.1
+// + mongoose@5.4.17
+// + color-hash@1.0.3  -- 사용자이름에 컬러

@@ -29,6 +29,8 @@ module.exports = (server) =>{
         socket.on('fromClient',(data)=>{
             console.log(data);
         });
+
+
         socket.interval = setInterval(()=>{
             // 전송 이벤
             socket.emit('fromServer',`${new Date()} - 서버 `)
@@ -36,5 +38,8 @@ module.exports = (server) =>{
 
 
 
+
     })
 };
+
+// 초기에 socket.io는 http 요청으로  웹소켓 사용여부물음
