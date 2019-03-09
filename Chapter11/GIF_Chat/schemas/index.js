@@ -1,16 +1,18 @@
 const mongoose = require('mongoose');
 
 
+module.exports = () =>{
+
 //몽구스 커넥션
 
-const { MONGO_ID,MONGO_PASSWORD,NODE_ENV } = process.env;
+const { MONGO_PASSWORD,MONGO_ID, NODE_ENV ,PORT} = process.env;
+
 
 // 몽고디비 접속 URL
 const MONGO_URL = `mongodb://${MONGO_ID}:${MONGO_PASSWORD}@localhost:27017/admin`;
 
-module.exports = () =>{
 
-
+    console.log(`${MONGO_ID} // ${MONGO_PASSWORD} // ${PORT}`);
     // connect 함수 선언
 
 

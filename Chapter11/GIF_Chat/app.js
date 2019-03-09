@@ -7,20 +7,27 @@ const morgan = require('morgan');
 const flash = require('connect-flash');
 const indexRouter = require('./routes');
 
-//const connect = require('./schemas');
+const connect = require('./schemas');
 
 const webSocket = require('./socketIO');
 
 
-require('dotenv').config();
 
 
 const app = express();
-//connect();
+
+require('dotenv').config();
+
+
+
 
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','pug');
 app.set('port',process.env.PORT||9876);
+
+
+
+connect();
 
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname,'public')));
@@ -37,6 +44,9 @@ app.use(session({
         secure:false,
     }
 }));
+
+
+
 
 app.use(flash());
 
