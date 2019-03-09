@@ -1,8 +1,32 @@
 const SocketIO = require('socket.io');
 
-module.exports = (server) =>{
+const axios = require('axios');
+
+module.exports = (server,app,sessionMiddleWare) =>{
 
     const io = SocketIO(server, { path: '/socket.io' }); //클라이언트 접속 path
+
+
+
+    /**===================================================
+              IO 객체 setting -- Express 글로벌 사용하기위해
+                @app.set('key',object)
+                @req.app.get('key')
+     ====================================================*/
+        app.set('io',io);
+
+        // SocketIO 에서의 미들웨어 사용
+        io.use((socket,next)=>{
+            /**=============================
+                @req = socket.request
+                @res = socket.request.res
+             ==============================*/
+            const req = socket.request;
+            const res = socket.request.res;
+           sessionMiddleWare(req,res,next);
+           // next();
+        });
+
 
 
     /*===========================
@@ -16,6 +40,10 @@ module.exports = (server) =>{
 
     room.on('connection',(socket)=>{
         console.log(socket.id,' Room namespace 접속');
+
+
+        console.log(`방 인 원 :${socket.adapter.rooms}`);
+
         socket.on('disconnect',()=>{
             console.log(' Room namespace 접속해제')
         })
@@ -51,8 +79,36 @@ module.exports = (server) =>{
         });
 
 
-        socket.on('disconnect',()=>{
-            console.log(' Chat namespace 접속해제')
+
+        // socket 해제
+        socket.on('disconnect',async ()=>{
+
+            console.log(' Chat namespace 접속해제');
+
+            // 방에서 소켓 제거
+            socket.leave(roomId);
+
+            // 나간 소켓 제거후 다시 카운팅
+            const currentRoom = socket.adapter.rooms[roomId];
+
+            const userCount = currentRoom.length | 0 ;
+
+            if(userCount === 0){
+
+                // 방제거
+                try{
+                    await  axios.delete(`http://localhost:${process.env.PORT}/room/${roomId}`);
+                    console.log('방 제거 요청 성공')
+                }catch(error){
+                    console.error(error);
+                }
+            }else{
+                socket.to(roomId).emit('exit',{
+                    user:'system',
+                    chat:`${req.session.color}님이 퇴장하셨습니다.`
+                })
+            }
+
         })
     });
 
@@ -62,6 +118,7 @@ module.exports = (server) =>{
     /** @NameSpace - '/' */
     io.on('connection',(socket)=>{
 
+        console.log(`방 인 원 :${socket.adapter.rooms.length}`);
       //  console.log(socket);
         const req =  socket.request;
         const ip = req.headers['x-forwarded-for']

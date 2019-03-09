@@ -53,10 +53,12 @@ module.exports = (server) =>{
 ```js
 const SocketIO = require('socket.io');
 
-module.exports = (server) =>{
+module.exports = (server,app) =>{
 
     const io = SocketIO(server); //클라이언트 접속 path
 
+// 익스프레스에서의 객체저장
+    app.set('io',io); // io 객체 글로벌 사용
 
     const room = io.of('/room')
     const chat = io.of('/chat')
@@ -76,3 +78,66 @@ module.exports = (server) =>{
   - **`socket.leave(ROOM_ID)`**:
              `해당 ROOM_ID 에 접속해제 하는 메소드`
        
+---
+ #### `Express 에서의 글로벌 객체 저장`
+
+**`app.set('key',object)`**
+
+**`req.app.get('key')`**
+
+--- 
+
+#### `Socket.io 에서의 미들웨어 사용`
+ ```js
+    const SocketIO = require('socket.io');
+
+    const io = SocketIO(server);
+    
+    io.use(MiddleWare,(socket,next)=>{
+
+      const req = socket.request;
+      const res = socket.request.res;
+
+     next();})
+  ```
+
+---
+#### `채팅방 나가기`
+
+```js
+// socket 해제
+        socket.on('disconnect',async ()=>{
+
+            console.log(' Chat namespace 접속해제');
+
+            // 방에서 소켓 제거
+            socket.leave(roomId);
+
+            // 나간 소켓 제거후 다시 카운팅
+            const currentRoom = socket.adapter.rooms[roomId];
+            // 방에 대한 정보 와 인원
+
+            const userCount = currentRoom.length | 0
+
+
+            
+            if(userCount === 0){
+
+                // 방제거
+                try{
+                    await  axios.delete(`http://localhost:${process.env.PORT}/room/${roomId}`);
+                    console.log('방 제거 요청 성공')
+                }catch(error){
+                    console.error(error);
+                }
+            }else{
+                socket.to(roomId).emit('exit',{
+                    user:'system',
+                    chat:`${req.session.color}님이 퇴장하셨습니다.`
+                })
+            }
+
+        })
+    });
+
+```
