@@ -93,12 +93,12 @@ module.exports = (server,app) =>{
 
     const io = SocketIO(server);
     
-    io.use(MiddleWare,(socket,next)=>{
+    io.use((socket,next)=>{
 
       const req = socket.request;
       const res = socket.request.res;
-
-     next();})
+      MiddleWare(req,res,next);
+        })
   ```
 
 ---
@@ -120,7 +120,7 @@ module.exports = (server,app) =>{
             const userCount = currentRoom.length | 0
 
 
-            
+
             if(userCount === 0){
 
                 // 방제거
@@ -140,4 +140,37 @@ module.exports = (server,app) =>{
         })
     });
 
+```
+
+ - ### `삭제를 요청할때 axios 요청을 하고  라우터에서 DB를 조작하는 것이 좋다`
+
+---
+
+### `해당 소켓에 emit`
+```js
+ socket.emit('messageName',
+    {
+        'user':'부엉이',
+        'chat':{
+            'content':'부엉부엉',
+            'createAt':`${Date()}`
+        }
+    }
+)
+```
+
+
+--- 
+
+### `BroadCast`
+```js
+ io.emit('messageName',
+    {
+        'user':'올빼미',
+        'chat':{
+            'content':'올뻄올뻄',
+            'createAt':`${Date()}`
+        }
+    }
+)
 ```

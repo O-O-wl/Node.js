@@ -6,8 +6,11 @@ const morgan = require('morgan');
 const ColorHash = require('color-hash');
 
 const flash = require('connect-flash');
+
 const indexRouter = require('./routes');
+
 require('dotenv').config();
+
 const connect = require('./schemas');
 
 const webSocket = require('./socketIO');
@@ -24,11 +27,6 @@ const sessionMiddleWare = session({
 
 
 const app = express();
-
-
-
-
-
 
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','pug');
@@ -78,7 +76,7 @@ app.use('/',indexRouter);
 app.use((req,res,next)=>{
     const error = new Error('NOT FOUND');
     error.status  = 404;
-    next();
+    next(error);
 
 });
 

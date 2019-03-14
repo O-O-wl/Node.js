@@ -18,7 +18,7 @@ const chatSchema  = new Schema({
         type:String,
 
     },
-    git:{
+    gif:{
         type:String
     },
     createAt:{

@@ -4,7 +4,7 @@ const axios = require('axios');
 
 module.exports = (server,app,sessionMiddleWare) =>{
 
-    const io = SocketIO(server, { path: '/socket.io' }); //클라이언트 접속 path
+    const io = SocketIO(server, { path: '/socket.io' ,tranports:['websocket']}); //클라이언트 접속 path
 
 
 
@@ -55,7 +55,7 @@ module.exports = (server,app,sessionMiddleWare) =>{
         const req = socket.request;
 
         const { headers:{referer}  } =req;
-        const roomId = referer.split('/')[referer.split['/'].length-1].replace(/\?.+/,'');
+        const roomId = referer.split('/')[referer.split('/').length-1].replace(/\?.+/,'');
         // room/{ROOM_ID} -> req.headers.referer
 
         /**=====================================
@@ -118,7 +118,9 @@ module.exports = (server,app,sessionMiddleWare) =>{
     /** @NameSpace - '/' */
     io.on('connection',(socket)=>{
 
-        console.log(`방 인 원 :${socket.adapter.rooms.length}`);
+        console.log((socket.adapter.rooms));
+        //console.logO()
+        //console.logO()
       //  console.log(socket);
         const req =  socket.request;
         const ip = req.headers['x-forwarded-for']
@@ -151,7 +153,7 @@ module.exports = (server,app,sessionMiddleWare) =>{
         });
 
 
-        socket.interval = setInterval(()=>{
+/*        socket.interval = setInterval(()=>{
             // 전송 이벤
             var comment = `${new Date()} - 서버 `;
 
@@ -160,7 +162,7 @@ module.exports = (server,app,sessionMiddleWare) =>{
             console.log(`target socket id : ${socket.id}`);
 
         },2000)
-
+*/
 
 
 
